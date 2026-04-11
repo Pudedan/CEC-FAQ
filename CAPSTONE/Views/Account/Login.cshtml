@@ -1,0 +1,34 @@
+﻿@model CAPSTONE.Models.AdminUser
+
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/Admin_style.css">
+
+<a href="/Home/Index" class="back-home">← Back Home</a>
+
+<div class="login-container">
+
+    <img src="~/New Logo.png" class="school-logo">
+
+    <h1>Admin Login</h1>
+
+    <form asp-action="Login" method="post">
+
+        <label>Username</label>
+        <input type="text" name="Username" required>
+
+        <label>Password</label>
+        <input type="password" name="Password" required>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    @if (ViewBag.Error != null)
+    {
+        <p style="color:red">@ViewBag.Error</p>
+    }
+
+</div>

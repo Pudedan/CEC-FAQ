@@ -1,0 +1,74 @@
+﻿@model List<CAPSTONE.Models.FAQ>
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<link rel="stylesheet" href="~/css/Dashboard_style.css">
+
+
+
+
+<!-- MAIN CONTAINER -->
+<div class="dashboard-wrapper">
+
+    <!-- CONTROLS -->
+    <form asp-action="Add" method="post" class="dashboard-controls">
+
+        <input name="Question" placeholder="Enter question..." required />
+
+        <input name="Answer" placeholder="Enter answer..." required />
+
+        <!-- 🔥 FIXED CATEGORY -->
+        <select name="Category" required>
+            <option value="">Select Category</option>
+            <option value="Enrollment">Enrollment</option>
+            <option value="Academics">Academics</option>
+            <option value="Facilities">Facilities</option>
+            <option value="Support">Support</option>
+            <option value="Finance">Finance</option>
+            <option value="General">General</option>
+        </select>
+
+        <button type="submit" class="add-btn">Add FAQ</button>
+
+    </form>
+
+    <!-- TABLE -->
+    <div class="table-container">
+        <h3>FAQ List</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Question</td>
+                        <td>@item.Answer</td>
+                        <td>@item.Category</td>
+                        <td>
+                            <a asp-action="Delete"
+                               asp-route-id="@item.Id"
+                               class="delete-btn">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

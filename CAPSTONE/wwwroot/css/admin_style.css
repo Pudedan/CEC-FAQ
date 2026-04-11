@@ -1,0 +1,200 @@
+﻿/* ------------------ */
+/* GENERAL */
+/* ------------------ */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg,#0A3B6E,#1E6BD6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------ */
+/* BACK HOME BUTTON */
+/* ------------------ */
+
+.back-home {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #FFFFFF;
+    color: #0A3B6E;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    .back-home:hover {
+        transform: scale(1.08);
+        background: #F2F2F2;
+    }
+
+/* ------------------ */
+/* LOGIN CONTAINER */
+/* ------------------ */
+
+.login-container {
+    width: 380px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+    .login-container:hover {
+        transform: translateY(-6px);
+    }
+
+/* ------------------ */
+/* LOGO */
+/* ------------------ */
+
+.school-logo {
+    height: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+    .school-logo:hover {
+        transform: scale(1.1);
+    }
+
+/* ------------------ */
+/* TITLES */
+/* ------------------ */
+
+.login-container h1 {
+    font-size: 22px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+    /* 🔥 consistency with system */
+    color: #FFE600;
+    text-shadow: 0 0 8px #fff;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+/* ------------------ */
+/* LABEL */
+/* ------------------ */
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* ------------------ */
+/* INPUT */
+/* ------------------ */
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background: rgba(255,255,255,0.95);
+    transition: all 0.3s ease;
+}
+
+    .login-container input:focus {
+        outline: none;
+        box-shadow: 0 0 8px #FFE600;
+        transform: scale(1.02);
+    }
+
+/* ------------------ */
+/* BUTTON */
+/* ------------------ */
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #FFE600;
+    color: #0A3B6E;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .login-container button:hover {
+        background: #FFD000;
+        transform: scale(1.05);
+    }
+
+/* ------------------ */
+/* MEDIA QUERIES */
+/* ------------------ */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .login-container {
+        width: 320px;
+        padding: 35px;
+    }
+
+    .school-logo {
+        height: 70px;
+    }
+
+    .login-container h1 {
+        font-size: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .school-logo {
+        height: 60px;
+    }
+
+    .login-container h1 {
+        font-size: 18px;
+    }
+
+    .login-container h2 {
+        font-size: 15px;
+    }
+
+    .back-home {
+        top: 15px;
+        left: 15px;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

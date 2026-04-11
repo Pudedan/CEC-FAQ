@@ -1,0 +1,217 @@
+﻿/* ------------------ */
+/* RESET & GENERAL STYLES */
+/* ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+/* ------------------ */
+/* VIDEO BACKGROUND */
+/* ------------------ */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* ------------------ */
+/* HEADER */
+/* ------------------ */
+.header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    z-index: 2;
+}
+
+/* LOGIN BUTTON */
+.login a {
+    background: #1E6BD6;
+    color: #fff;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    .login a:hover {
+        background: #155AB5;
+        transform: scale(1.08);
+    }
+
+/* ------------------ */
+/* SCHOOL HEADER */
+/* ------------------ */
+.school-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 20px;
+    z-index: 2;
+}
+
+.school-logo {
+    height: 120px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+    .school-logo:hover {
+        transform: scale(1.08);
+    }
+
+/* TITLE */
+.school-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #FFE600 !important; 
+    text-shadow: 0 0 12px #fff, 0 0 20px #0A3B6E;
+}
+
+/* ------------------ */
+/* NAVBAR */
+/* ------------------ */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 55%;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background: rgba(10, 59, 110, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+    .navbar:hover {
+        transform: scale(1.03);
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 16px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.25);
+            color: #FFE600;
+        }
+
+/* ------------------ */
+/* WELCOME SECTION */
+/* ------------------ */
+.welcome {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 45px;
+    background: rgba(255,255,255,0.95);
+    color: #0A3B6E;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    .welcome:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+    }
+
+    .welcome h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .welcome p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+/* ------------------ */
+/* FOOTER */
+/* ------------------ */
+.foot {
+    margin-top: 60px;
+    background: rgba(5, 17, 179, 0.9);
+    padding: 18px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+/* ------------------ */
+/* RESPONSIVE */
+/* ------------------ */
+@media (max-width: 768px) {
+
+    .school-header h1 {
+        font-size: 30px;
+    }
+
+    .navbar {
+        width: 75%;
+        gap: 20px;
+    }
+
+    .welcome {
+        padding: 30px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .school-header h1 {
+        font-size: 22px;
+    }
+
+    .school-logo {
+        height: 70px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .welcome {
+        padding: 20px;
+    }
+}

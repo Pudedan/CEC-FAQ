@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/home_style.css">
+    <link rel="stylesheet" href="~/css/global.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="login">
+            @if (Context.Request.Path.ToString().Contains("/FAQ/Admin"))
+            {
+                <a href="/Account/Logout">Logout</a>
+            }
+            else
+            {
+                <a href="/Account/Login">Admin Login</a>
+            }
+        </div>
+    </header>
+
+    <!-- SCHOOL HEADER -->
+    <div class="school-header">
+        <img src="~/New Logo.png" class="school-logo">
+        <h1>CEBU EASTERN COLLEGE</h1>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="/Home/Index">Home</a>
+        <a href="/Home/About">About</a>
+        <a href="/FAQ/Index">FAQ</a>
+    </nav>
+
+    <!-- 🔥 THIS IS WHERE PAGE CONTENT GOES -->
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+        <p>© 2026 Cebu Eastern College</p>
+    </footer>
+
+</body>
+</html>
