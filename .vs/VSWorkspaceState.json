@@ -8,6 +8,6 @@
     "\\CAPSTONE\\wwwroot",
     "\\CAPSTONE\\wwwroot\\css"
   ],
-  "SelectedNode": "\\CAPSTONE\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\CAPSTONE\\Views\\Account\\Login.cshtml",
   "PreviewInSolutionExplorer": false
 }
