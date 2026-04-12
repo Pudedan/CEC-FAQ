@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg,#0A3B6E,#1E6BD6);
-    height: 100vh;
+    background: linear-gradient(135deg, #0A3B6E, #1E6BD6);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,11 +43,11 @@ body {
     padding: 45px;
     text-align: center;
     border-radius: 18px;
-    background: rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.35);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     color: #FFFFFF;
     transition: all 0.3s ease;
 }
@@ -71,21 +71,24 @@ body {
     }
 
 /* ------------------ */
-/* TITLES */
+/* TITLE */
 /* ------------------ */
 
 .login-container h1 {
     font-size: 22px;
-    margin: 5px 0;
+    margin: 10px 0 25px;
     letter-spacing: 1px;
-    /* 🔥 consistency with system */
     color: #FFE600;
     text-shadow: 0 0 8px #fff;
 }
 
-.login-container h2 {
-    margin-bottom: 25px;
-    font-weight: normal;
+/* ------------------ */
+/* FORM GROUP */
+/* ------------------ */
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
 }
 
 /* ------------------ */
@@ -94,7 +97,6 @@ body {
 
 .login-container label {
     display: block;
-    text-align: left;
     margin-bottom: 6px;
     font-weight: bold;
 }
@@ -106,11 +108,10 @@ body {
 .login-container input {
     width: 100%;
     padding: 12px;
-    margin-bottom: 18px;
     border: none;
     border-radius: 8px;
     font-size: 15px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     transition: all 0.3s ease;
 }
 
@@ -127,6 +128,7 @@ body {
 .login-container button {
     width: 100%;
     padding: 12px;
+    margin-top: 10px;
     background: #FFE600;
     color: #0A3B6E;
     border: none;
@@ -143,10 +145,18 @@ body {
     }
 
 /* ------------------ */
-/* MEDIA QUERIES */
+/* ERROR MESSAGE */
 /* ------------------ */
 
-/* Tablets */
+.login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ------------------ */
+/* TABLET */
+/* ------------------ */
+
 @media (max-width: 768px) {
 
     .login-container {
@@ -161,13 +171,12 @@ body {
     .login-container h1 {
         font-size: 20px;
     }
-
-    .login-container h2 {
-        font-size: 16px;
-    }
 }
 
-/* Mobile */
+/* ------------------ */
+/* MOBILE */
+/* ------------------ */
+
 @media (max-width: 480px) {
 
     body {
@@ -185,10 +194,6 @@ body {
 
     .login-container h1 {
         font-size: 18px;
-    }
-
-    .login-container h2 {
-        font-size: 15px;
     }
 
     .back-home {

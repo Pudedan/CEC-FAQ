@@ -19,17 +19,21 @@
 
         <h1>Admin Login</h1>
 
-        <form asp-action="Login" method="post">
+       <form asp-action="Login" method="post">
 
-            <label>Username</label>
-            <input type="text" name="Username" required />
+    <div class="form-group">
+        <label>Username</label>
+        <input type="text" name="Username" required>
+    </div>
 
-            <label>Password</label>
-            <input type="password" name="Password" required />
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="Password" required>
+    </div>
 
-            <button type="submit">Login</button>
+    <button type="submit">Login</button>
 
-        </form>
+</form>
 
         @if (ViewBag.Error != null)
         {
