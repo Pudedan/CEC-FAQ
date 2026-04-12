@@ -1,5 +1,5 @@
 ﻿/* ------------------ */
-/* RESET & GENERAL STYLES */
+/* RESET & GENERAL */
 /* ------------------ */
 * {
     margin: 0;
@@ -12,45 +12,26 @@ html, body {
     font-family: 'Segoe UI', Arial, sans-serif;
     scroll-behavior: smooth;
     color: #fff;
+    /* 🔥 MATCH LOGIN BACKGROUND */
+    background: linear-gradient(135deg,#0A3B6E,#1E6BD6);
 }
 
-/* ------------------ */
-/* VIDEO BACKGROUND */
-/* ------------------ */
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-#bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    filter: brightness(0.6);
-}
 
 /* ------------------ */
 /* HEADER */
 /* ------------------ */
 .header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     padding: 15px 30px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     border-radius: 0 0 12px 12px;
 }
 
-/* LOGIN */
+/* LOGIN BUTTON */
 .login a {
     background: #1E6BD6;
     color: #fff;
@@ -65,6 +46,7 @@ html, body {
         background: #155AB5;
         transform: scale(1.08);
     }
+
 
 /* ------------------ */
 /* SCHOOL HEADER */
@@ -86,14 +68,14 @@ html, body {
         transform: scale(1.08);
     }
 
-/* 🔥 FIXED TITLE */
 .school-header h1 {
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #FFE600 !important;
-    text-shadow: 0 0 12px #fff, 0 0 20px #0A3B6E;
+    color: #FFE600;
+    text-shadow: 0 0 12px #fff;
 }
+
 
 /* ------------------ */
 /* NAVBAR */
@@ -105,9 +87,11 @@ html, body {
     width: 60%;
     margin: 20px auto;
     padding: 15px;
-    background: rgba(10, 59, 110, 0.9);
+    /* 🔥 GLASS EFFECT */
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
     transition: 0.3s;
 }
 
@@ -129,56 +113,6 @@ html, body {
             color: #FFE600;
         }
 
-/* ------------------ */
-/* FAQ CONTAINER */
-/* ------------------ */
-.faq-container {
-    width: 90%;
-    max-width: 850px;
-    margin: 40px auto 50px;
-}
-
-/* FAQ CARD */
-.faq-item {
-    background: rgba(255,255,255,0.95);
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #0A3B6E;
-}
-
-    .faq-item:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.3);
-    }
-
-    /* QUESTION */
-    .faq-item h3 {
-        font-size: 20px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: #1E6BD6;
-        position: relative;
-    }
-
-        /* + / - ICON */
-        .faq-item h3::after {
-            content: "+";
-            position: absolute;
-            right: 0;
-            font-size: 22px;
-        }
-
-    /* ANSWER */
-    .faq-item p {
-        font-size: 16px;
-        line-height: 1.6;
-        display: none;
-        margin-top: 10px;
-    }
 
 /* ------------------ */
 /* FILTER */
@@ -195,18 +129,79 @@ html, body {
 select {
     padding: 12px;
     border-radius: 10px;
+    border: none;
 }
+
+
+/* ------------------ */
+/* FAQ CONTAINER */
+/* ------------------ */
+.faq-container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto 50px;
+}
+
+
+/* ------------------ */
+/* FAQ CARD */
+/* ------------------ */
+.faq-item {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+    .faq-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+    }
+
+
+    /* QUESTION */
+    .faq-item h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #FFE600;
+        position: relative;
+    }
+
+        /* + ICON */
+        .faq-item h3::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            font-size: 22px;
+        }
+
+    /* ANSWER */
+    .faq-item p {
+        font-size: 16px;
+        line-height: 1.6;
+        display: none;
+        margin-top: 10px;
+    }
+
 
 /* ------------------ */
 /* FOOTER */
 /* ------------------ */
 .foot {
     margin-top: 60px;
-    background: rgba(5, 17, 179, 0.9);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     padding: 18px;
     text-align: center;
     border-radius: 12px 12px 0 0;
 }
+
 
 /* ------------------ */
 /* RESPONSIVE */

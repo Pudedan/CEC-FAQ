@@ -4,9 +4,10 @@
     "\\CAPSTONE",
     "\\CAPSTONE\\Views",
     "\\CAPSTONE\\Views\\Account",
+    "\\CAPSTONE\\Views\\FAQ",
     "\\CAPSTONE\\wwwroot",
     "\\CAPSTONE\\wwwroot\\css"
   ],
-  "SelectedNode": "\\CAPSTONE\\Views\\Account\\Login.cshtml",
+  "SelectedNode": "\\CAPSTONE\\wwwroot\\css\\admin_style.css",
   "PreviewInSolutionExplorer": false
 }
