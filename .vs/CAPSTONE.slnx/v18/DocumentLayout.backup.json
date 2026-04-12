@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\CAPSTONE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CAPSTONE\\Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\wwwroot\\css\\admin_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CAPSTONE\\wwwroot\\css\\admin_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CAPSTONE\\Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "CAPSTONE\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "CAPSTONE\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-12T12:16:35.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "admin_style.css",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\wwwroot\\css\\admin_style.css",
               "RelativeDocumentMoniker": "CAPSTONE\\wwwroot\\css\\admin_style.css",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\wwwroot\\css\\admin_style.css",
               "RelativeToolTip": "CAPSTONE\\wwwroot\\css\\admin_style.css",
-              "ViewState": "AgIAALMAAAAAAAAAAAAcwM0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALMAAAAAAAAAAAAcwMcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-04-12T12:12:55.078Z",
               "EditorCaption": ""

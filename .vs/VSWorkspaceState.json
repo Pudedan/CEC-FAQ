@@ -7,6 +7,6 @@
     "\\CAPSTONE\\wwwroot",
     "\\CAPSTONE\\wwwroot\\css"
   ],
-  "SelectedNode": "\\CAPSTONE\\wwwroot\\css\\admin_style.css",
+  "SelectedNode": "\\CAPSTONE\\Views\\Account\\Login.cshtml",
   "PreviewInSolutionExplorer": false
 }
