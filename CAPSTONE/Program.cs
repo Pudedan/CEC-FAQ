@@ -10,6 +10,7 @@ var app = builder.Build();
 
 // Middleware
 app.UseStaticFiles();
+app.Urls.Add("http://0.0.0.0:10000");
 app.UseRouting();
 
 // ✅ Use Session
