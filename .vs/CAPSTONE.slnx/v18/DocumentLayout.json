@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "CAPSTONE\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\CAPSTONE\\CAPSTONE\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "CAPSTONE\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-12T12:16:35.186Z",
               "EditorCaption": ""
@@ -43,8 +43,7 @@
               "RelativeToolTip": "CAPSTONE\\wwwroot\\css\\admin_style.css",
               "ViewState": "AgIAALMAAAAAAAAAAAAcwM0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-12T12:12:55.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T12:12:55.078Z"
             }
           ]
         }
