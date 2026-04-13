@@ -30,11 +30,14 @@
     </div>
 
     <!-- NAVBAR -->
+    @if (!Context.Request.Path.Value.Contains("/FAQ/Admin"))
+{
     <nav class="navbar">
         <a href="/Home/Index">Home</a>
         <a href="/Home/About">About</a>
         <a href="/FAQ/Index">FAQ</a>
     </nav>
+}
 
     <!-- 🔥 THIS IS WHERE PAGE CONTENT GOES -->
     <div>

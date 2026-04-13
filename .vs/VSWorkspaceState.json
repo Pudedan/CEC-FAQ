@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CAPSTONE",
+    "\\CAPSTONE\\Views",
+    "\\CAPSTONE\\Views\\Account",
+    "\\CAPSTONE\\Views\\FAQ",
+    "\\CAPSTONE\\Views\\Home",
+    "\\CAPSTONE\\Views\\Shared",
+    "\\CAPSTONE\\wwwroot",
+    "\\CAPSTONE\\wwwroot\\css",
+    "\\CAPSTONE\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\CAPSTONE\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}
